@@ -1,3 +1,4 @@
+import EarlyAccess from './components/EarlyAccess';
 import Features from './components/Features';
 import Intro from './components/Intro';
 import Navbar from './components/Navbar';
@@ -12,6 +13,7 @@ function App() {
       <Features />
       <StayProductive />
       <Testimonial />
+      <EarlyAccess />
     </>
   );
 }
