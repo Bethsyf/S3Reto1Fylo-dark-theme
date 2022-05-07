@@ -2,6 +2,7 @@ import Features from './components/Features';
 import Intro from './components/Intro';
 import Navbar from './components/Navbar';
 import StayProductive from './components/StayProductive';
+import Testimonial from './components/Testimonial';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Intro />
       <Features />
       <StayProductive />
+      <Testimonial />
     </>
   );
 }

@@ -20,7 +20,7 @@ padding: 0 15px;
 
 const CardFeature = ({img,head,text}) => {
   return (
-    <Card >
+    <Card>
             <img src={img} alt='img'/>
             <H2>{head}</H2>
             <P>{text}</P>
