@@ -9,14 +9,13 @@ export const Btn = styled.button`
   border-radius: 40px;
   color: #fff;
   font-size: 16px;
-  font-weight: bold;  
-  @media screen and (max-width: 950px){
-      margin-top: 30px;
-      width: 84%;
-      }  
+  font-weight: bold; 
   @media screen and (max-width: 750px){
-    height: 85px;
-    }  
+        height: 90px;
+        width: 70%;
+        font-size: 23px;
+        margin-top: 50px;
+    }   
 `
 
 const Button = ({text}) => {
