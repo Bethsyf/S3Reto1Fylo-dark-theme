@@ -49,7 +49,7 @@ const Intro = () => {
         <ImgIntro src='https://res.cloudinary.com/dmaviub4l/image/upload/v1651708380/vudbvoolunzmznf6iw49.png' alt='illustration-intro' />
         <H1>All your files in one secure location, accessible anywhere.</H1>
         <Pintro>Fylo stores all you most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</Pintro>
-        <Button text='Get Started' />
+        <Button type='button' text='Get Started' />
         </Container>
   )
 }

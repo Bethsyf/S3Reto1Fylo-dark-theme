@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const FooterDiv = styled.div` 
@@ -7,10 +6,19 @@ export const FooterDiv = styled.div`
     padding-top: 200px;
     padding-bottom: 90px;
     margin-top: -150px;
+    
 `
 
 export const Conta = styled.div` 
     display: flex;
+    margin-left: 40px;
+`
+export const Conta2 = styled.div` 
+    display: flex;   
+`
+export const Conta3 = styled.div` 
+    padding-left: 35px; 
+    padding-right: 35px;   
 `
 
 export const ImgLogo = styled.img` 
@@ -18,8 +26,9 @@ export const ImgLogo = styled.img`
 `
 
 export const I = styled.i` 
+    display: flex;
+    align-items: center;
     border-radius: 50%;
-    border: 1px solid white;
     padding: 10px;
     margin: 0 7px;
     &:first-child{
@@ -32,55 +41,90 @@ export const I = styled.i`
 
 export const Pfooter = styled.p` 
     padding-right: 20px;
-    opacity: 0.8;    
+    opacity: 0.8; 
+    width: 350px;   
 `
 
-export const A = styled.a` 
-    opacity: 0.8;
+export const Redes = styled.ul` 
+    padding:0;
+    display:grid;
+    grid-template-columns: 35px 35px 35px;
+    grid-template-rows:35px;
+    grid-gap:10px;
+    margin-top:25px;    
+`
+
+export const LiRedes = styled.li` 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style-type:none;
+    cursor: pointer;
+    font-size:1.5em;
+`
+
+export const ImgRedes = styled.img` 
+    width: 40px;
+`
+export const Ul = styled.ul` 
+    padding:0;
+	margin:0;
+    width:400px;
+    
+    
+`
+export const Li = styled.li` 
+    padding: 10px;
+    list-style-type:none;
+    cursor: pointer;
+    color:hsl(0, 0%, 100%);
+
 `
 
 const Footer = () => {
     return(
+
         <FooterDiv>
             <Conta>
                 <ImgLogo src='https://res.cloudinary.com/dmaviub4l/image/upload/v1651708377/zigynbcpkdugzjzgaife.svg' alt='logo'/>
-                <div>
+                </Conta>
+                <Conta>
                     <div>
-                        <div>
-                            <I class="fa fa-map-marker fa-lg" aria-hidden="true"></I>
+                        <Conta2>
+                            <I ><img src='https://res.cloudinary.com/dmaviub4l/image/upload/v1651708379/nn4hi5se7qrp9kckvwcf.svg' alt='location'/></I>
                             <Pfooter>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</Pfooter>
-                        </div>
+                        </Conta2>
                     </div>
-                    <div className='footer-section sec-2'>
-                        <div className='footer-flex'>
-                            <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+                    <Conta3>
+                        <Conta2>
+                            <I><img src='https://res.cloudinary.com/dmaviub4l/image/upload/v1651708379/nl3fa5zklhrrymos3idh.svg' alt='email'/></I>
                             <p>+1-543-123-4567</p>
-                        </div>
-                        <div className='footer-flex'>
-                            <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+                        </Conta2>
+                        <Conta2>
+                            <I ><img src='https://res.cloudinary.com/dmaviub4l/image/upload/v1651708379/cz4zakarjdgvuo6ulamy.svg' alt='email'/></I>
                             <p>example@fylo.com</p>
-                        </div>
-                    </div>
-                    <div className='footer-section sec-3'>
-                        <A href='/'>About Us</A>
-                        <A href='/'>Jobs</A>
-                        <A href='/'>Press</A>
-                        <A href='/'>Blog</A>
-                    </div>
-                    <div className='footer-section sec-4'>
-                        <A href='/'>Contact Us</A>
-                        <A href='/'>Terms</A>
-                        <A href='/'>Privacy</A>
-                    </div>
-                    <div className='footer-section sec-5'>
-                    <div className='footer-flex mobile-center'>
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </div>
-                    </div>
-                </div>
-            </Conta>
+                        </Conta2>
+                    </Conta3>
+                    <Ul>
+                        <Li href='/'>About Us</Li>
+                        <Li href='/'>Jobs</Li>
+                        <Li href='/'>Press</Li>
+                        <Li href='/'>Blog</Li>
+                    </Ul>
+                    <Ul>
+                        <Li href='/'>Contact Us</Li>
+                        <Li href='/'>Terms</Li>
+                        <Li href='/'>Privacy</Li>
+                    </Ul>
+                    <Conta3>
+                    <Redes>
+                        <LiRedes ><ImgRedes src='https://res.cloudinary.com/dmaviub4l/image/upload/v1652009488/iss2fuv0mvmbhysqxmsu.png' alt='facebook'/></LiRedes>
+                        <LiRedes ><ImgRedes src='https://res.cloudinary.com/dmaviub4l/image/upload/v1652009601/psnrw2x6wu4rd7k39hop.png' alt='twitter'/></LiRedes>
+                        <LiRedes><ImgRedes src='https://res.cloudinary.com/dmaviub4l/image/upload/v1652009748/ccmwypbzqgjyzizs5kyj.png' alt='facebook'/></LiRedes>
+                    </Redes>
+                    </Conta3>
+                    </Conta>
+            
         </FooterDiv>
     );
 }
