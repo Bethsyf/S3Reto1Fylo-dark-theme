@@ -57,7 +57,7 @@ const EarlyAccess = () => {
         <Early>
             <H2>Get early access today</H2>
             <PAcc>It only takes a minute to sign up and our free starter tier is extremely generous. if you have any questions, our support tram would be happy to help you.</PAcc>
-            <Input type='text' placeholder='email@example.com'/>
+            <Input type='text' placeholder='email@example.com' required/>
             <Button text='Get Started' classSize='email-btn'/>
         </Early>
     );

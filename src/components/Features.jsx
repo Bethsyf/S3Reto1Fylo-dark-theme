@@ -3,13 +3,18 @@ import styled from 'styled-components'
 import CardFeature from './CardFeature'
 
 export const Cont = styled.div` 
-display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: -35px;
     z-index: 12;
+    margin-top: 60px;
     position: relative;
+    @media screen and (max-width: 750px){
+        flex-direction: column;        
+    } 
 `
+
 
 const Features = () => {
   return (

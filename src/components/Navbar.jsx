@@ -12,6 +12,13 @@ export const Conta = styled.div`
     justify-content: center;
     align-items: center;    
 ` 
+export const A = styled.a` 
+    color:white;
+    list-style-type:none;
+    text-decoration:none;
+    padding:30px 30px;
+    display:inline-block;    
+` 
 
 const Navbar = () => {
     return (
@@ -21,9 +28,9 @@ const Navbar = () => {
                     <img src='https://res.cloudinary.com/dmaviub4l/image/upload/v1651708377/zigynbcpkdugzjzgaife.svg' alt='logo' />
                 </div>
                 <Conta>
-                    <a href="#">Features</a>
-                    <a href="#">Team</a>
-                    <a href="#">Sign In</a>
+                    <A href="#">Features</A>
+                    <A href="#">Team</A>
+                    <A href="#">Sign In</A>
                 </Conta>
             </Header>
         </>
