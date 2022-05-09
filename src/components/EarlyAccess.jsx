@@ -54,11 +54,13 @@ export const Input = styled.input`
 
 const EarlyAccess = () => {
     return(
-        <Early>
+        <Early >
             <H2>Get early access today</H2>
             <PAcc>It only takes a minute to sign up and our free starter tier is extremely generous. if you have any questions, our support tram would be happy to help you.</PAcc>
+            <form action="#">
             <Input type='text' placeholder='email@example.com' required/>
-            <Button type='submit' text='Get Started'/>
+            <Button type='submit' text='Get Started'/>            
+            </form>
         </Early>
     );
 }

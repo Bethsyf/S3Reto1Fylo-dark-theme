@@ -118,9 +118,9 @@ const Footer = () => {
                     </Ul>
                     <Conta3>
                     <Redes>
-                        <LiRedes ><ImgRedes src='https://res.cloudinary.com/dmaviub4l/image/upload/v1652009488/iss2fuv0mvmbhysqxmsu.png' alt='facebook'/></LiRedes>
-                        <LiRedes ><ImgRedes src='https://res.cloudinary.com/dmaviub4l/image/upload/v1652009601/psnrw2x6wu4rd7k39hop.png' alt='twitter'/></LiRedes>
-                        <LiRedes><ImgRedes src='https://res.cloudinary.com/dmaviub4l/image/upload/v1652009748/ccmwypbzqgjyzizs5kyj.png' alt='facebook'/></LiRedes>
+                        <LiRedes ><ImgRedes src='https://res.cloudinary.com/dmaviub4l/image/upload/v1652101036/drtrf4heyadelcmxj7fp.png' alt='facebook'/></LiRedes>
+                        <LiRedes ><ImgRedes src='https://res.cloudinary.com/dmaviub4l/image/upload/v1652101060/e4vel7wrgd3plmyndqnb.png' alt='twitter'/></LiRedes>
+                        <LiRedes><ImgRedes src='https://res.cloudinary.com/dmaviub4l/image/upload/v1652101038/kbgxgcjfu2x1pgaqnxd2.png' alt='instagram'/></LiRedes>
                     </Redes>
                     </Conta3>
                     </Conta>
